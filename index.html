@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./thor.png">
+</head>
+<body>
+    
+    <dialog class="popup">
+        <div class="aba">
+           <div class="intask">
+            <input id="task-input" class="pesquisa" type="text" placeholder="Título...">
+
+           </div>
+           <div class="x">
+            <button title="clique aqui para fechar o popup"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg></button>
+           </div>
+        </div>
+
+        <div>
+            <div class="tu">
+                Adicione a urgência:
+            </div>
+            <div class="urgencias">
+                <div class="e111">
+                    <div class="e11"  onclick="toggleBackground(this)"></div> 
+                    <button class="e1" title="clique aqui para adicionar uma task vermelha"  onclick="toggleBackground(this)"><h1>Urgente</h1></button>
+                </div>
+                
+                <div class="e222">
+                    <div class="e22"  onclick="toggleBackground(this)"></div> 
+                    <button class="e2" title="clique aqui para adicionar uma task verde"  onclick="toggleBackground(this)"><h1>Adiável</h1></button>
+                </div>
+                
+                <div class="e333">
+                    <div class="e33"  onclick="toggleBackground(this)"></div> 
+                    <button class="e3" title="clique aqui para adicionar uma task amarela"  onclick="toggleBackground(this)"><h1>Moderado</h1></button>
+                </div>
+        </div>
+        <div>
+            <h1 class="data">Data</h1>
+            <div>
+                <form action="/action_page.php">
+                    <input type="date" class="birthday" name="birthday">
+                  </form>
+            </div>
+            
+        </div>
+        <div>
+            <button class="ok"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send-plus-fill" viewBox="0 0 16 16">
+                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 1.59 2.498C8 14 8 13 8 12.5a4.5 4.5 0 0 1 5.026-4.47zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+              </svg></button>
+        </div>
+
+    </dialog>
+
+    <div class="ceu"></div>
+    
+    <div class="seg">
+        <div>
+            <h1 class="rag">RAGNAROK LIST</h1>
+        </div>
+        <button class="ic" title="clique aqui para adicionar uma task">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+              </svg>
+        </button>
+        
+    </div>  
+    
+    <div class="breve">
+        <h1>Em breve</h1>
+        <div class="line"></div>
+    </div>
+      
+      <div class="tudo">
+        <ul class="task">
+        </ul>
+      </div> 
+    
+      
+      <div class="img"></div>
+    
+      
+ 
+      
+</body>
+    <script src="script.js"></script>
+</html>
